@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="DealerSocket">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script src="scripts/app.js"></script>
+    <title>Dealer Socket</title>
+</head>
+
+<body ng-view>
+<div ng-controller="MainController">
+
+    <nav class="navbar navbar-nav" ng-repeat="menu in menus">
+        {{menu.name}}
+        <div ng-repeat="item in menu.subitems">
+            {{item.name}}
+        </div>
+    </nav>
+    <div class="jumbotron">
+
+    </div>
+    <div class="container">
+    </div>
+</div>
+</body>
+
+</html>
