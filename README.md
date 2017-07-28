@@ -1,2 +1,0 @@
-# DealerSocket
-Dealer Socket Project
